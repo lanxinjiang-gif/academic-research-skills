@@ -26,52 +26,42 @@ Used by `draft_writer_agent` and `peer_reviewer_agent`.
 
 ## Register Adjustment by Discipline
 
-### Sciences (Natural, Applied)
+### Accounting / Auditing (Archival Empirical)
 ```
-Register: Formal, impersonal, method-focused
-Voice: Passive voice common ("was measured," "were analyzed")
-Terminology: Precise measurements, SI units, statistical notation
-Example: "The sample was heated to 350°C for 2 hours, yielding a conversion rate of 87.3% (SD = 2.1)."
+Register: Formal, evidence-hierarchy conscious, economics-framed
+Voice: Passive for methods, active for hypotheses and contributions
+Terminology: Causal language carefully hedged; "consistent with," "we find," "our results suggest"
+Statistical notation: Coefficient notation (β), t-statistics in parentheses, R², adj-R²
+Example: "Consistent with H1, firms with material weaknesses in ICFR report significantly higher
+discretionary accruals (β = 0.042, t = 3.21), representing a 17% increase relative to the sample mean."
+Caution: Avoid "causes" without explicit identification strategy; use "is associated with" for OLS results
 ```
 
-### Social Sciences
+### Accounting Information Systems / Design Science
+```
+Register: Formal, problem-solution oriented, artifact-aware
+Voice: Active for contributions, passive for technical methods
+Terminology: Artifact types (construct, model, method, instantiation), evaluation criteria
+Example: "The proposed XBRL tagging classifier achieves 94.2% precision on the held-out test set,
+outperforming the baseline logistic regression model by 8.3 percentage points (McNemar's test, p < .01)."
+```
+
+### Social Sciences / Management
 ```
 Register: Formal, theory-informed, participant-aware
 Voice: Active voice encouraged, first person for researcher decisions
 Terminology: Theoretical constructs, operationalized variables
-Example: "We employed semi-structured interviews to explore how participants understood institutional change (N = 24)."
+Example: "We employed semi-structured interviews to explore how CFOs understood audit committee
+independence (N = 24, saturation reached at n = 18)."
 ```
 
-### Humanities
-```
-Register: Formal, argument-driven, interpretive
-Voice: First person acceptable for arguments, active voice
-Terminology: Close reading vocabulary, theoretical language
-Example: "I argue that the text's spatial metaphors reveal an underlying anxiety about institutional permanence."
-```
-
-### Engineering / CS
+### Engineering / CS / Machine Learning
 ```
 Register: Formal, problem-solution oriented, specification-precise
 Voice: Passive common for methods, active for contributions
-Terminology: Technical specifications, performance metrics
-Example: "The proposed algorithm achieves O(n log n) complexity, outperforming the baseline by 34% on the benchmark dataset."
-```
-
-### Education
-```
-Register: Formal, practice-oriented, stakeholder-aware
-Voice: Active voice, first person for reflexive practice
-Terminology: Pedagogical concepts, assessment language
-Example: "The intervention improved student metacognitive awareness, as evidenced by a significant increase in self-regulation scores (t(45) = 3.21, p = .002, d = 0.72)."
-```
-
-### Medicine / Health
-```
-Register: Formal, evidence-hierarchy conscious, clinical precision
-Voice: Passive for methods, active for findings
-Terminology: Clinical terms, diagnostic criteria, statistical reporting
-Example: "Patients receiving the intervention showed a 40% reduction in readmission rates (RR = 0.60, 95% CI [0.45, 0.80], p = .001)."
+Terminology: Technical specifications, performance metrics, benchmarks
+Example: "The proposed FinBERT-based classifier achieves an AUC of 0.89 on the out-of-time test set,
+outperforming the Beneish M-Score baseline by 12 percentage points."
 ```
 
 ## Hedging and Strength Language

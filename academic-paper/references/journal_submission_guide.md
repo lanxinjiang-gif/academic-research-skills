@@ -42,51 +42,46 @@ Used by `formatter_agent` and `intake_agent`.
 | Ethics statement | If applicable | IRB approval, informed consent |
 | AI disclosure | Increasingly | Nature, Science require this |
 
-## Common Journal Types in Higher Education
+## Common Journal Types in Accounting, Business & Technology
 
-### Top HEI Journals (International)
+### Top Accounting Journals (FT50 / AAA)
 
-| Journal | Impact | Citation Style | Typical Length |
-|---------|--------|---------------|---------------|
-| Higher Education | High | APA | 8,000-10,000 |
-| Studies in Higher Education | High | APA | 6,000-8,000 |
-| Research in Higher Education | High | APA | 6,000-10,000 |
-| Quality in Higher Education | Medium | APA | 5,000-7,000 |
-| Assessment & Evaluation in Higher Education | Medium | APA | 5,000-8,000 |
-| Journal of Higher Education | High | Chicago | 8,000-12,000 |
-| Tertiary Education and Management | Medium | APA | 5,000-7,000 |
-| International Journal of Educational Development | Medium | APA | 6,000-8,000 |
+| Journal | Tier | Citation Style | Typical Length | Notes |
+|---------|------|---------------|---------------|-------|
+| The Accounting Review (TAR) | Top 3 / FT50 | Chicago Author-Date | 10,000-15,000 | Rigorous causal identification required |
+| Journal of Accounting Research (JAR) | Top 3 / FT50 | Chicago Author-Date | 10,000-15,000 | High methodology bar; welcomes experiments |
+| Journal of Accounting and Economics (JAE) | Top 3 / FT50 | Chicago Author-Date | 10,000-15,000 | Economics-based; demands clean IV/DID |
+| Contemporary Accounting Research (CAR) | Top 6 / FT50 | Chicago Author-Date | 8,000-12,000 | More methodology-pluralistic than Big 3 |
+| Review of Accounting Studies (RAST) | Top 6 / FT50 | Chicago Author-Date | 8,000-12,000 | Values replication and robustness |
+| Accounting, Organizations and Society (AOS) | FT50 | Chicago Author-Date | 8,000-12,000 | Qualitative and critical approaches |
+| Auditing: A Journal of Practice & Theory | Mid-tier | Chicago Author-Date | 6,000-10,000 | Auditing, PCAOB, audit quality |
+| Journal of Management Accounting Research | Mid-tier | APA | 6,000-10,000 | Management accounting, surveys, experiments |
 
-### Major Multidisciplinary Journals
+### Accounting Information Systems Journals
+
+| Journal | Tier | Citation Style | Typical Length | Notes |
+|---------|------|---------------|---------------|-------|
+| Journal of Information Systems (JIS) | Mid-tier (AAA) | APA | 5,000-9,000 | AIS, IT governance, audit analytics, XBRL |
+| International Journal of Accounting Information Systems (IJAIS) | Mid-tier | APA | 6,000-10,000 | AIS design, blockchain in accounting |
+| MIS Quarterly | Top / FT50 | APA | 8,000-14,000 | IS research broadly; design science welcome |
+| Information Systems Research | Top / FT50 | APA | 8,000-14,000 | IS theory and empirical research |
+
+### Business & Management Journals
+
+| Journal | Tier | Citation Style | Typical Length | Notes |
+|---------|------|---------------|---------------|-------|
+| Management Science | Top / FT50 | APA | 8,000-12,000 | Quantitative management; decision models |
+| Journal of Finance | Top / FT50 | Chicago Author-Date | 8,000-12,000 | Finance; accounting-finance intersection |
+| Review of Financial Studies | Top / FT50 | Chicago Author-Date | 8,000-12,000 | Finance, disclosure, information asymmetry |
+| Journal of Financial Economics | Top / FT50 | Chicago Author-Date | 8,000-12,000 | Corporate finance, governance, disclosure |
+
+### Multidisciplinary / Open Access Options
 
 | Journal | Impact | Citation Style | Typical Length | Open Access |
 |---------|--------|---------------|---------------|-------------|
-| Nature | Very High | Nature style | 3,000-5,000 | Hybrid |
-| Science | Very High | Science style | 2,500-4,500 | Hybrid |
 | PLOS ONE | Medium | Vancouver | No limit | Full OA |
-| Frontiers (series) | Medium-High | Vancouver | 3,000-12,000 | Full OA |
 | SAGE Open | Medium | APA | No limit | Full OA |
-
-### Major Education Journals (Beyond HEI)
-
-| Journal | Impact | Citation Style | Typical Length |
-|---------|--------|---------------|---------------|
-| Review of Educational Research | Very High | APA | 15,000-20,000 |
-| Educational Researcher | High | APA | 5,000-8,000 |
-| American Educational Research Journal | High | APA | 8,000-12,000 |
-| British Educational Research Journal | High | APA | 6,000-8,000 |
-| Teaching and Teacher Education | High | APA | 6,000-8,000 |
-| Computers & Education | High | APA | 6,000-10,000 |
-
-### Taiwan HEI Journals (TSSCI)
-
-| Journal | Romanized Chinese Name | Citation Style |
-|---------|---------|---------------|
-| Journal of Research in Education Sciences | Jiao Yu Ke Xue Yan Jiu Qi Kan | APA |
-| Bulletin of Educational Research | Jiao Yu Yan Jiu Ji Kan | APA |
-| Journal of Taiwan Normal University: Education | Shi Da Xue Bao: Jiao Yu Lei | APA |
-| Journal of Educational Practice and Research | Jiao Yu Shi Jian Yu Yan Jiu | APA |
-| Higher Education Review | Gao Deng Jiao Yu | APA |
+| Frontiers in Finance | Medium | Vancouver | 3,000-12,000 | Full OA |
 
 ## Cover Letter Template
 

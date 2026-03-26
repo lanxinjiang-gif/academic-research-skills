@@ -429,25 +429,251 @@ Phase 3: Outcomes
 - Recommendations for future practice/research:
 ```
 
+## Pattern 11: Archival Empirical Research (Accounting / Finance)
+
+### When to Use
+- Research questions about financial reporting, audit quality, earnings management, disclosure, or executive compensation using large-sample accounting data
+- Testing causal hypotheses using naturally occurring variation in financial databases (Compustat, CRSP, EDGAR, Audit Analytics)
+- Exploiting regulatory events, accounting standard changes, or economic shocks as quasi-natural experiments
+
+### Distinction from General Empirical Research
+- **Data source**: Compustat, CRSP, EDGAR, Audit Analytics — not surveys or lab data
+- **Identification**: Causal identification is the defining challenge; reviewers at top accounting journals demand it
+- **Sample construction**: Explicit data merge steps (e.g., CRSP-Compustat CCM link); exclusion criteria must be justified
+- **Standard controls**: Firm size (log assets), leverage, ROA, book-to-market, growth (sales change), loss indicator, firm age — omitting standard controls raises red flags
+
+### Design Template
+```
+Research Question: Does [treatment/event] affect [accounting/financial outcome]?
+
+Protocol:
+1. Theory Development
+   - Identify the economic mechanism linking treatment to outcome
+   - Generate directional predictions (hypotheses) grounded in agency theory,
+     information asymmetry, contracting theory, or institutional theory
+   - Distinguish from prior literature: what is the incremental contribution?
+
+2. Sample Construction
+   - Define base sample (e.g., Compustat annual, 2000-2022, U.S. firms)
+   - Apply standard exclusions: financial firms (SIC 6000-6999), utilities (SIC 4900-4999),
+     missing data, outliers (winsorize at 1%/99%)
+   - Document all exclusion criteria and resulting sample size at each step
+   - Merge additional databases: CRSP (returns), Audit Analytics (audit data), EDGAR (textual)
+   - Describe final sample: firm-year obs, number of unique firms, time period
+
+3. Variable Measurement
+   - Dependent variable: justify operationalization (e.g., discretionary accruals via
+     modified Jones model, audit quality via Big 4 indicator, AQ via Dechow-Dichev model)
+   - Treatment/independent variable: define precisely, address measurement error
+   - Control variables: include standard set for the outcome domain; cite precedents
+
+4. Identification Strategy
+   - Main approach: OLS/logit/probit with firm, year, and industry fixed effects
+   - Causal identification (choose one or more):
+     a. Difference-in-differences (DID): identify treatment and control groups; verify
+        parallel trends pre-treatment
+     b. Regression Discontinuity (RDD): exploit regulatory or size thresholds
+     c. Instrumental Variable (IV): identify valid instrument; test relevance + exclusion
+     d. Natural experiment: law change, regulatory shock, accounting standard adoption
+   - Address endogeneity: self-selection, reverse causality, omitted variables
+
+5. Estimation
+   - Primary regression: define the estimating equation explicitly
+   - Standard errors: cluster by firm and year (Petersen 2009)
+   - Fixed effects: firm FE, year FE (or industry × year FE for more demanding tests)
+   - Report economic significance (effect size), not just statistical significance
+
+6. Robustness and Sensitivity
+   - Alternative variable operationalizations
+   - Alternative sample periods or subsamples
+   - Entropy balancing or PSM if selection is a concern
+   - Placebo tests (pre-treatment periods, pseudo-treatments)
+   - Addressing parallel trends violations (Sun & Abraham 2021 for staggered DID)
+
+7. Cross-Sectional Analyses
+   - Test whether the main effect is stronger/weaker in predicted subsamples
+   - Provides evidence on the economic mechanism (not just whether, but why)
+
+Quality Criteria:
+- Identification clarity: Can the reader understand exactly why this is causal?
+- Data transparency: Sample construction fully reproducible from the description
+- Parallel trends: If DID, pre-treatment trend tests reported (event-study plot preferred)
+- Robustness: Main inference holds across at least 3 alternative specifications
+- Economic significance: Effect sizes translated to real-world magnitude
+- Literature positioning: Contribution table showing how this extends at least 2 prior papers
+
+Reporting Standards: No EQUATOR standard specific to archival accounting; follow conventions
+of target journal (TAR, JAR, JAE) — typically Table 1 (descriptive stats), Table 2 (correlations),
+Table 3 (main results), Table 4+ (robustness / cross-sectional)
+```
+
+### Standard Table Structure (Accounting Archival Paper)
+```
+Table 1: Sample Selection and Descriptive Statistics
+Table 2: Pearson/Spearman Correlation Matrix (flag 5% significance)
+Table 3: Main Regression Results (OLS/logit; multiple columns varying FE)
+Table 4: Robustness Tests (alternative measures, alternative samples)
+Table 5: Cross-Sectional Analysis (mechanism / heterogeneity tests)
+[Optional] Table 6: Additional Tests / Supplementary Analysis
+```
+
+---
+
+## Pattern 12: Design Science Research (DSR)
+
+### When to Use
+- Creating and evaluating purposeful IT artifacts (systems, models, frameworks, algorithms)
+- Accounting Information Systems (AIS), audit analytics tools, XBRL implementations, decision support
+- When the research goal is to solve a real-world problem by building something, not just describing it
+
+### Distinction from Other Patterns
+- **vs. Technology Requirements Analysis (Pattern 8)**: DSR produces a generalizable knowledge contribution (design theory or design principles), not just a system for a specific client
+- **vs. Exploratory Research (Pattern 6)**: DSR has a normative (prescriptive) goal — how to build things better — not just descriptive
+- **vs. Empirical Research**: The artifact itself is a research output; evaluation is built in, not added at the end
+
+### Design Template
+```
+Research Question: How can [artifact] be designed to improve [outcome] in [context]?
+
+Protocol (Hevner et al. 2004 / Peffers et al. 2007 DSRM):
+
+1. Problem Identification and Motivation
+   - Define the specific problem; justify its importance to practitioners and researchers
+   - Establish that existing solutions are inadequate
+   - Identify the knowledge gap (what design knowledge does not yet exist?)
+
+2. Objectives of a Solution
+   - Specify what a successful artifact must accomplish (functional and non-functional requirements)
+   - Derive objectives from the problem definition and prior knowledge
+
+3. Design and Development
+   - Define artifact type: construct (vocabulary), model (abstraction), method (algorithm/process),
+     instantiation (implemented system), or design theory
+   - Apply relevant kernel theories (e.g., agency theory for fraud detection systems, information
+     processing theory for dashboard design)
+   - Document design decisions and trade-offs
+
+4. Demonstration
+   - Deploy the artifact in one or more use cases or case studies
+   - Show that the artifact can solve the problem (proof of concept)
+
+5. Evaluation
+   - Assess how well the artifact solves the problem (effectiveness, efficiency, utility)
+   - Methods: controlled experiment, case study, simulation, expert panel, field study
+   - Map evaluation method to research question type
+
+6. Communication
+   - Generalize findings: what design principles or design theory emerge?
+   - Articulate contribution to IS knowledge (not just "we built a system")
+
+Quality Criteria:
+- Design relevance: Does the artifact address a real, important problem?
+- Design rigor: Is it grounded in kernel theories from reference disciplines?
+- Design utility: Does evaluation demonstrate improvement over existing solutions?
+- Generalizability: Are design principles transferable beyond the specific instantiation?
+- Novelty: Does the artifact represent a new form of the solution?
+
+Reporting Standards: DESRIST guidelines; AIS Transactions on Replication Studies for AIS context
+```
+
+---
+
+## Pattern 13: Machine Learning Research
+
+### When to Use
+- Developing predictive models for accounting or auditing outcomes (fraud detection, bankruptcy, misstatement prediction)
+- Building text analysis pipelines on financial disclosures (10-K, MD&A, earnings calls, comment letters)
+- Comparing ML model performance against traditional statistical benchmarks
+- Applying NLP, deep learning, or ensemble methods to accounting/finance problems
+
+### Distinct Contribution Types
+- **Methodological**: A new model or approach that outperforms existing methods on a benchmark task
+- **Application**: Applying established ML methods to a new accounting domain with substantive findings
+- **Theory-informed**: Using interpretable ML to uncover mechanisms (e.g., SHAP values explaining audit risk drivers)
+
+### Design Template
+```
+Research Question: Can [ML approach] improve [prediction/classification] of [accounting outcome]?
+
+Protocol:
+
+1. Problem Framing
+   - Define the prediction/classification target (e.g., fraud, going concern, material weakness,
+     earnings management, credit rating)
+   - Establish why ML is appropriate: large feature space, nonlinear relationships, textual data,
+     or pattern detection at scale
+
+2. Data Construction
+   - Define sample and time window; justify train/test split (avoid look-ahead bias)
+   - Feature engineering: financial ratios, text features (TF-IDF, word embeddings, FinBERT),
+     audit variables, governance indicators
+   - Address class imbalance: SMOTE, class weighting, or anomaly detection framing
+   - Document all preprocessing steps for reproducibility
+
+3. Model Selection and Baseline
+   - Candidate models: logistic regression (baseline), Random Forest, XGBoost, LSTM, BERT/FinBERT
+   - Always include a traditional accounting model as baseline (e.g., Beneish M-Score, Altman Z-Score,
+     F-Score for earnings manipulation)
+   - Justify model complexity relative to sample size and interpretability needs
+
+4. Validation Strategy
+   - Preferred: out-of-time validation (train on years T-n to T-k; test on T-k+1 to T)
+   - If cross-validation: use time-series CV (not k-fold, which leaks future data)
+   - Report: AUC-ROC, precision, recall, F1, accuracy — not just accuracy
+   - Statistical significance testing: DeLong test for AUC comparison; bootstrap CIs
+
+5. Interpretability and Mechanism
+   - Variable importance: SHAP values (preferred), permutation importance, partial dependence plots
+   - Connect top features to accounting theory (why should auditors care about feature X?)
+   - Distinguish statistical prediction from causal claims
+
+6. Robustness
+   - Sensitivity to hyperparameter choices (grid search or Bayesian optimization)
+   - Performance across sub-periods, industry groups, or firm size quartiles
+   - Comparison to simpler models (does complexity justify marginal gain?)
+
+7. Practical Implications
+   - Decision threshold analysis: at what probability cutoff does the model add value?
+   - False positive / false negative cost asymmetry (especially for audit risk applications)
+   - Implementation constraints: data availability at decision time, auditor judgment integration
+
+Quality Criteria:
+- No data leakage: future information must not contaminate training data
+- Proper baseline: comparison against established accounting models, not just naive benchmarks
+- Interpretability: top predictors are explained in accounting terms, not just listed
+- Reproducibility: code, data sources, and hyperparameters fully documented
+- Economic significance: predictive improvement translates to meaningful decision value
+- Honest evaluation: test-set performance reported, not tuned test-set performance
+
+Reporting Standards: Checklist from Kapoor & Narayanan (2022) "Leakage and the Reproducibility
+Crisis in ML-based Science" recommended; ACM FAccT principles for fairness-relevant applications
+```
+
+---
+
 ## Choosing the Right Pattern
 
 ```
 What type of question?
-├── "What is known?" → Systematic Literature Review
-├── "How do cases compare?" → Comparative Case Study
-├── "Is this policy working?" → Policy Analysis
-├── "What's happening and why?" → Mixed Methods
-├── "What do documents reveal?" → Content Analysis
-├── "How is this experienced?" → Exploratory Research
-├── "How do we compare?" → Benchmarking Study
-├── "Which technology should we use?" → Technology Requirements Analysis
-├── "What does the law say?" → Legal Case Analysis
-└── "What knowledge emerges from practice?" → Creative/Practice-Based Research
+├── "What is known?" → Systematic Literature Review (Pattern 1)
+├── "How do cases compare?" → Comparative Case Study (Pattern 2)
+├── "Is this policy working?" → Policy Analysis (Pattern 3)
+├── "What's happening and why?" → Mixed Methods (Pattern 4)
+├── "What do documents reveal?" → Content Analysis (Pattern 5)
+├── "How is this experienced?" → Exploratory Research (Pattern 6)
+├── "How do we compare?" → Benchmarking Study (Pattern 7)
+├── "Which technology should we use?" → Technology Requirements Analysis (Pattern 8)
+├── "What does the law say?" → Legal Case Analysis (Pattern 9)
+├── "What knowledge emerges from practice?" → Creative/Practice-Based Research (Pattern 10)
+├── "Does X affect earnings/audit quality/disclosure?" → Archival Accounting Research (Pattern 11)
+├── "How can we build an artifact to solve this problem?" → Design Science Research (Pattern 12)
+└── "Can ML predict/detect this accounting outcome?" → Machine Learning Research (Pattern 13)
 
 More nuanced decision:
 ├── Technology assessment related
 │   ├── Comparing different technology options → Pattern 8 (Technology Requirements Analysis)
-│   └── Comparing technology adoption across organizations → Pattern 2 (Comparative Case Study)
+│   ├── Comparing technology adoption across organizations → Pattern 2 (Comparative Case Study)
+│   └── Building an AIS artifact with generalizable design theory → Pattern 12 (Design Science)
 ├── Law/policy related
 │   ├── What legal texts prescribe and how courts interpret them → Pattern 9 (Legal Case Analysis)
 │   └── Whether a policy is effective and how to improve it → Pattern 3 (Policy Analysis)
@@ -455,6 +681,11 @@ More nuanced decision:
 │   ├── Generating knowledge through the creative process → Pattern 10 (Creative/Practice-Based Research)
 │   ├── Understanding the experience of creators → Pattern 6 (Exploratory Research)
 │   └── Analyzing creative texts/works → Pattern 5 (Content Analysis)
+├── Accounting/auditing related
+│   ├── Large-sample financial database research with causal claim → Pattern 11 (Archival Accounting)
+│   ├── Building fraud detection or audit analytics tools → Pattern 12 (Design Science) or Pattern 13 (ML)
+│   ├── Predicting restatements, going concern, or ICW → Pattern 13 (Machine Learning)
+│   └── Analyzing SEC comment letters or 10-K text at scale → Pattern 13 (ML) or Pattern 5 (Content Analysis)
 └── Uncertain
     ├── New topic with scarce literature → Pattern 6 (Exploratory Research)
     ├── Complex problem requiring multiple data types → Pattern 4 (Mixed Methods)

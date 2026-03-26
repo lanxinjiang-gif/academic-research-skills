@@ -131,11 +131,11 @@ Default: IMRaD (for empirical research) or Literature Review (for synthesis topi
 ### Step 4: Citation Format
 | Format | Default Disciplines |
 |--------|-------------------|
-| **APA 7th** (default) | Education, Psychology, Social Sciences |
-| **Chicago 17th** | History, Humanities, some Social Sciences |
+| **Chicago 17th** (default for accounting) | Accounting (TAR, JAR, JAE, CAR, RAST use Chicago Author-Date) |
+| **APA 7th** | Psychology, Social Sciences, some Management |
+| **IEEE** | Engineering, Computer Science, AIS/Technology |
 | **MLA 9th** | Literature, Languages, Cultural Studies |
-| **IEEE** | Engineering, Computer Science, Technology |
-| **Vancouver** | Medicine, Biomedical Sciences, Nursing |
+| **Vancouver** | Medicine, Biomedical Sciences |
 
 Auto-suggest based on discipline; user can override.
 
@@ -148,8 +148,8 @@ Auto-suggest based on discipline; user can override.
 
 ### Step 6: Language & Abstract
 - Detect user's language from input
-- Ask about paper body language: EN / zh-TW / bilingual
-- Ask about abstract: Bilingual (default) / EN only / zh-TW only
+- Ask about paper body language: EN (default) / bilingual
+- Ask about abstract: EN only (default) / bilingual
 
 ### Step 7: Word Count
 - Auto-suggest based on paper type (see table above)
@@ -181,8 +181,8 @@ Reference: `references/funding_statement_guide.md`
 
 - Ask if the research received any funding
 - If funded:
-  - Funding agency name(s) (e.g., NSTC, MOE, university internal grant)
-  - Grant number(s) (e.g., NSTC 113-2410-H-003-001)
+  - Funding agency name(s) (e.g., NSF, NIH, AICPA, IMA, university internal grant)
+  - Grant number(s)
   - PI or co-PI role of author(s) on the grant
   - Any funder-required disclaimers?
 - If not funded: note "no funding" (still requires explicit statement in paper)
@@ -204,8 +204,8 @@ Reference: `references/funding_statement_guide.md`
 | **Target Journal** | [journal name or "General"] |
 | **Citation Format** | [APA 7th / Chicago 17th / MLA 9th / IEEE / Vancouver] |
 | **Output Format** | [Markdown / LaTeX / DOCX / PDF / Combined] |
-| **Body Language** | [EN / zh-TW / Bilingual] |
-| **Abstract** | [Bilingual / EN-only / zh-TW-only] |
+| **Body Language** | [EN / Bilingual] |
+| **Abstract** | [EN-only / Bilingual] |
 | **Word Count Target** | [number] words |
 | **Existing Materials** | [list of provided materials] |
 | **Co-Authors** | [single-author / number of co-authors + corresponding author + brief contribution notes] |

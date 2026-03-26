@@ -50,7 +50,40 @@ This document is used by `field_analyst_agent` and `eic_agent` as a reference fo
 
 ---
 
-## 3. Business & Management
+## 3. Accounting
+
+### Financial Accounting & Auditing
+| Journal | Publisher | Impact / Tier | Typical Review Preferences |
+|---------|----------|---------------|---------------------------|
+| *The Accounting Review (TAR)* | AAA | Top 3 (FT50) | Rigorous causal identification, large-sample archival; strong theory motivation required; economics-based framing preferred |
+| *Journal of Accounting Research (JAR)* | Wiley / U Chicago | Top 3 (FT50) | Highly methodological; causal inference bar is very high; welcomes experiments and natural experiments |
+| *Journal of Accounting and Economics (JAE)* | Elsevier | Top 3 (FT50) | Economics-based; prefers large-sample archival; demands clean identification strategy (DID, RDD, IV) |
+| *Contemporary Accounting Research (CAR)* | Wiley / CAAA | Top 6 (FT50) | Broad methodology; more receptive to qualitative and international work than the Big 3 |
+| *Review of Accounting Studies (RAST)* | Springer | Top 6 (FT50) | Empirical-heavy; values replication and robustness; less theoretical than JAR |
+| *Review of Accounting and Finance (RAF)* | Emerald | Mid-tier | Finance-accounting intersection; international data welcome |
+| *Accounting, Organizations and Society (AOS)* | Elsevier | High (FT50) | Interpretive, qualitative, and critical approaches; socio-organizational framing; hostile to pure econometrics |
+| *Journal of Management Accounting Research (JMAR)* | AAA | Mid-tier | Management accounting, field studies, experiments, survey-based |
+| *Auditing: A Journal of Practice & Theory (AJPT)* | AAA | Mid-tier | Auditing standards, audit quality, audit market structure; welcomes experiment and archival |
+| *The Accounting Horizons* | AAA | Mid-tier | Practitioner-relevant research; standard-setting implications |
+| *European Accounting Review (EAR)* | Taylor & Francis | Mid-tier | European context; pluralistic methodology; IFRS and regulatory research |
+| *Journal of Financial Reporting (JFR)* | AAA | Emerging | Financial reporting quality, standard-setting, disclosure |
+
+### Accounting Information Systems
+| Journal | Publisher | Impact / Tier | Typical Review Preferences |
+|---------|----------|---------------|---------------------------|
+| *Journal of Information Systems (JIS)* | AAA | Mid-tier | AIS, IT governance, audit analytics, data quality |
+| *International Journal of Accounting Information Systems (IJAIS)* | Elsevier | Mid-tier | AIS design, XBRL, blockchain in accounting |
+
+### Notes for EIC Calibration
+- **Big 3** (TAR, JAR, JAE): Expect top-tier causal identification; "interesting" is not enough — must have a clean empirical design or strong theory
+- **FT50 list**: TAR, JAR, JAE, CAR, RAST, AOS are all FT50 journals; treat with commensurate rigor
+- **AAA journals**: Authors typically cite AAA style guide; empirical papers follow specific table conventions
+- **Identification standard**: Reviewers at top accounting journals will ask: "What is your identification strategy? Why is this causal and not just correlational?"
+- **Disclosure-based research**: Regulators (SEC, PCAOB, IASB) are common practical audiences; policy implications matter
+
+---
+
+## 4. Business & Management
 
 | Journal | Publisher | Impact Factor Range | Typical Review Preferences |
 |---------|----------|-------------------|---------------------------|
@@ -105,20 +138,7 @@ This document is used by `field_analyst_agent` and `eic_agent` as a reference fo
 
 ---
 
-## 6. Medicine & Health Sciences
-
-| Journal | Publisher | Impact Factor Range | Typical Review Preferences |
-|---------|----------|-------------------|---------------------------|
-| *The Lancet* | Elsevier | 90-170 | Highest standards, global health |
-| *BMJ (British Medical Journal)* | BMJ | 90-100 | Clinical research, public health policy |
-| *Medical Education* | Wiley | 5-7 | Medical education research |
-| *Academic Medicine* | AAMC | 6-8 | Medical education, academic medicine |
-| *BMC Medical Education* | Springer | 3-4 | Open access, medical education |
-| *Advances in Health Sciences Education* | Springer | 3-5 | Health sciences education theory |
-
----
-
-## 7. Interdisciplinary
+## 6. Interdisciplinary
 
 | Journal | Publisher | Impact Factor Range | Typical Review Preferences |
 |---------|----------|-------------------|---------------------------|
@@ -149,40 +169,10 @@ This document is used by `field_analyst_agent` and `eic_agent` as a reference fo
 
 ---
 
-## 8. Asian & Regional Journals
-
-### Taiwan (TSSCI-Indexed)
-
-| Journal | Field | ISSN | Notes |
-|---------|-------|------|-------|
-| 教育研究集刊 (Bulletin of Educational Research) | Education | 1028-8708 | NTNU; top Taiwan education journal |
-| 高等教育 (Higher Education) | Higher Education | 1813-3282 | Taiwan HE policy and practice |
-| 課程與教學季刊 (Curriculum & Instruction Quarterly) | Curriculum Studies | 1560-1277 | Curriculum design and pedagogy |
-| 教育科學研究期刊 (Journal of Research in Education Sciences) | Education Sciences | 2073-753X | Broad education research scope |
-| 當代教育研究季刊 (Contemporary Educational Research Quarterly) | Education | 1814-4810 | NTNU; contemporary education issues |
-| 教育政策論壇 (Educational Policy Forum) | Education Policy | 1560-3601 | NCNU; policy analysis |
-| 教育心理學報 (Bulletin of Educational Psychology) | Educational Psychology | 1011-5714 | NTNU; psychological perspectives in education |
-| 測驗學刊 (Psychological Testing) | Psychometrics | 1609-4905 | Assessment and measurement |
-
-### Asia-Pacific
-
-| Journal | Field | Publisher | Impact |
-|---------|-------|-----------|--------|
-| Asia Pacific Education Review | Education | Springer | Q2 in Education; strong Asia focus |
-| Higher Education Policy | Higher Education | Springer/IAU | Q1-Q2; international HE policy |
-| Journal of Asian Public Policy | Public Policy | Taylor & Francis | Asian policy contexts |
-| Asia Pacific Journal of Education | Education | Taylor & Francis | Q2; pan-Asian education research |
-| International Journal of Educational Development | Development Education | Elsevier | Q1; includes Asia extensively |
-| Compare: A Journal of Comparative and International Education | Comparative Ed | Taylor & Francis | Q1; strong Asian coverage |
-| Asian Journal of Social Science | Social Sciences | Brill | Multidisciplinary Asian studies |
-
-### Open Access Options (by Field)
+## 8. Open Access Options (by Field)
 
 | Field | OA Journal | Publisher | APC (USD) | Notes |
 |-------|-----------|-----------|-----------|-------|
-| Education | Frontiers in Education | Frontiers | ~$1,350 | Q2; fast review; broad scope |
 | Multidisciplinary | PLOS ONE | PLOS | ~$1,931 | Q1; accepts all fields; rigorous methodology focus |
-| Higher Education | Education Sciences | MDPI | ~$1,800 | Q2; HE section available |
-| Educational Technology | International Journal of Educational Technology in Higher Education | Springer | Free (funded) | Q1; excellent for ed-tech research |
-| Social Sciences | Social Sciences | MDPI | ~$1,600 | Q2; broad social science scope |
-| Asian Studies | Asian Education and Development Studies | Emerald | ~$3,350 | Q2; specifically Asian education development |
+| Social Sciences / Business | Social Sciences | MDPI | ~$1,600 | Q2; broad social science scope |
+| Finance | Frontiers in Finance | Frontiers | ~$1,350 | Fast review; broad finance scope |

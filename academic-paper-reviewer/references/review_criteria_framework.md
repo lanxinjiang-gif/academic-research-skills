@@ -138,6 +138,44 @@ Beyond universal dimensions, specifically focus on:
 | Evidence quality | Are policy recommendations based on reliable evidence |
 | Unintended consequences | Are unintended policy impacts considered |
 
+### 2.6 Archival Accounting Research
+
+Beyond universal dimensions, accounting archival papers face a distinct set of review concerns at TAR/JAR/JAE/CAR/RAST:
+
+| Additional Dimension | Review Focus |
+|---------------------|-------------|
+| **Identification strategy** | Is there a credible causal claim, or is this purely correlational? Reviewers will ask: "What identification strategy do the authors use?" Acceptable: DID, RDD, IV, natural experiment. Insufficient: OLS with controls alone, unless explicitly framed as descriptive |
+| **Parallel trends (for DID)** | Is the parallel pre-treatment trend assumption tested with an event-study plot or F-test? Staggered adoption requires Sun & Abraham (2021) or Callaway & Sant'Anna (2021) |
+| **Endogeneity handling** | Self-selection, reverse causality, and omitted variables are the Big 3 threats. Authors must explicitly address each |
+| **Sample construction** | Are exclusion criteria (financial firms SIC 6000–6999, utilities, missing data, outlier winsorization) documented? Is the final sample size justified? |
+| **Variable operationalization** | Are dependent variable proxies well-established and cited (e.g., modified Jones model for discretionary accruals, Kothari et al. 2005 for performance-matched AEM, Roychowdhury 2006 for RAM)? |
+| **Standard errors** | Are standard errors clustered by firm and year (Petersen 2009)? One-way clustering is a red flag |
+| **Economic significance** | Are effect sizes translated to real-world magnitudes, not just statistical significance? |
+| **Cross-sectional tests** | Does the paper test for heterogeneity in the main effect across subsamples? This is the primary way to establish mechanism |
+| **Robustness depth** | Minimum 3 alternative specifications: alternative DV operationalization, alternative sample period, alternative fixed effects structure |
+| **Data source credibility** | Compustat, CRSP, Audit Analytics, EDGAR, I/B/E/S, BoardEx — data sources must be clearly identified; non-standard data requires validation |
+| **Placebo tests** | For causal claims, placebo outcomes or pseudo-treatment periods should be reported |
+| **Contribution positioning** | Authors must explain: which 2–3 papers are directly extended, and what is the incremental contribution? "We add to the literature on X" is insufficient |
+
+#### Accounting-Specific Red Flags (Automatic Major Revision or Reject at Big 3)
+- Causal language ("causes," "leads to") with no identification strategy beyond OLS + controls
+- Accruals measure without citing the model (Jones, modified Jones, Kothari et al.)
+- DID without parallel trends test
+- Standard errors not clustered at the appropriate level
+- Omitting firm and year fixed effects in panel data without justification
+- Sample includes financial firms or utilities without explanation
+- No cross-sectional analysis to support mechanism claims
+- Contribution is purely out-of-sample replication of a known result in a different country (without additional theoretical contribution)
+
+#### Auditing-Specific Additional Dimensions
+| Additional Dimension | Review Focus |
+|---------------------|-------------|
+| **Audit Analytics data** | If using Audit Analytics, verify data definitions (e.g., restatement taxonomy, ICW severity classifications) |
+| **Auditor-client matching** | Is the matching of audit opinions, fees, or ICW disclosures to Compustat financials correctly described? |
+| **Going concern** | If GCO is an outcome, is the selection bias from financially distressed firms addressed? |
+| **PCAOB inspection data** | Inspection deficiencies must be correctly coded (office-level vs. firm-level); engagement-level deficiencies are not public |
+| **Comment letter data** | If using SEC comment letters from EDGAR, describe the extraction method (keyword search, full-text parsing) and validate the sample |
+
 ---
 
 ## 3. Common Review Pitfalls

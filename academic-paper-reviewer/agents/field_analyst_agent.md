@@ -20,11 +20,11 @@ After reading the paper, analyze the following 6 dimensions sequentially:
 
 ### 1. Primary Discipline
 - The paper's core disciplinary affiliation
-- Examples: higher education, information science, public policy, business management, medical education
+- Examples: accounting, auditing, finance, accounting information systems (AIS), business management, information science, public policy
 
 ### 2. Secondary Disciplines
 - Cross-disciplinary fields the paper touches on (maximum 3)
-- Example: An AI higher education paper may involve information science + educational measurement
+- Example: An audit analytics paper may involve accounting + information systems + machine learning
 
 ### 3. Research Paradigm
 - Quantitative Research
@@ -106,23 +106,23 @@ Based on the 6-dimension analysis results, produce a Reviewer Configuration Card
 
 ### Dynamic Configuration Examples
 
-**Example 1: "Impact of AI on Higher Education Quality Assurance"**
+**Example 1: "Internal Control Weaknesses and Earnings Management: Evidence from SOX 404 Disclosures"**
 
 | Reviewer | Identity | Review Focus |
 |----------|----------|-------------|
-| EIC | *Quality in Higher Education* Editor, ESG framework expert | Journal fit, QA field contribution |
-| R1 | Mixed methods research design expert, educational measurement background | AI effectiveness measurement, causal inference validity |
-| R2 | Higher education policy scholar, comparative education background | QA framework citation accuracy, policy context |
-| R3 | AI ethics researcher, information science background | Algorithm bias, data privacy, feasibility of technical claims |
+| EIC | *The Accounting Review* Associate Editor, financial reporting quality expert | Journal fit, incremental contribution over existing ICW-AEM literature |
+| R1 | Archival empirical accounting researcher, panel data and DID specialist | Identification strategy, endogeneity, parallel trends, clustered SEs |
+| R2 | Auditing scholar, internal controls and SOX 404 domain expert | ICW taxonomy accuracy (Audit Analytics coding), audit quality controls |
+| R3 | Information systems / AIS researcher | XBRL data quality, automated disclosure parsing methodology |
 
-**Example 2: "Impact of Declining Birth Rates on Management Strategies of Taiwan's Private Universities"**
+**Example 2: "Machine Learning for Misstatement Detection: A FinBERT Approach to 10-K MD&A Disclosures"**
 
 | Reviewer | Identity | Review Focus |
 |----------|----------|-------------|
-| EIC | *Studies in Higher Education* Associate Editor, university governance expert | International reader interest, comparative value |
-| R1 | Educational economist, panel data analysis specialist | Statistical treatment of birth rate data, causal identification |
-| R2 | Taiwan higher education policy researcher, private university exit mechanism expert | Policy context accuracy, literature completeness |
-| R3 | Organizational management / strategic management scholar | Theoretical foundation of strategy frameworks, connection to business management theory |
+| EIC | *Journal of Information Systems* Editor, AIS and audit analytics expert | Journal fit, AIS contribution vs. pure ML venue |
+| R1 | NLP / machine learning researcher, financial text analysis background | Model architecture, data leakage prevention, out-of-time validation |
+| R2 | Archival accounting researcher, SEC enforcement and restatement expert | Label construction from Audit Analytics, class imbalance handling |
+| R3 | Auditing practitioner-scholar | Practical adoption barriers, false positive cost asymmetry, auditor judgment integration |
 
 ---
 
