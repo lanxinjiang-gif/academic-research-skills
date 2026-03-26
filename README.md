@@ -17,12 +17,18 @@ A comprehensive suite of Claude Code skills for academic research, covering the 
 
 ---
 
-## Features
+## Skills
 
+### Core Research Pipeline (original)
 - **Deep Research** — 13-agent research team with Socratic guided mode + systematic review / PRISMA + SCR Loop
 - **Academic Paper** — 12-agent paper writing with LaTeX output hardening, visualization, revision coaching, and citation conversion
 - **Academic Paper Reviewer** — Multi-perspective peer review with 0-100 quality rubrics (EIC + 3 dynamic reviewers + Devil's Advocate)
 - **Academic Pipeline** — Full 10-stage pipeline orchestrator with adaptive checkpoints, claim verification, and material passport
+
+### Accounting Research Extensions (added in this fork)
+- **AAA Manuscript Review** — Review manuscripts for AAA / The Accounting Review (TAR) submission compliance; applies tracked changes via Word XML
+- **Accounting Literature Search** — Search and retrieve accounting research papers from top journals (TAR, JAR, JAE, CAR, RAST)
+- **Accounting Reviewer Response** — Draft structured, journal-normed responses to peer reviewer comments for accounting submissions
 
 ### Full Pipeline
 

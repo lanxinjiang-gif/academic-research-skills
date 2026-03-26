@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tc1",
+    "prompt": "Find me papers on machine learning for fraud detection in accounting.",
+    "assertions": [
+      "Returns at least 3 papers",
+      "Papers are ranked by relevance first",
+      "Each paper includes title, authors, year, journal, and a DOI or URL",
+      "High-relevance papers include a structured summary with RQ, method, findings",
+      "At least one key quote is provided in APA format",
+      "Results are drawn from target journals (JAR, JAE, TAR, CAR, RAS, AOS, JAPP, AJPT, AH)"
+    ]
+  },
+  {
+    "id": "tc2",
+    "prompt": "What does the literature say about audit quality and client characteristics?",
+    "assertions": [
+      "Interprets the implicit literature search request without requiring clarification",
+      "Returns papers from auditing-relevant journals (AJPT, TAR, JAR, etc.)",
+      "Papers are ranked relevance > citations > year",
+      "Recent papers appear before older ones within the same relevance/citation tier",
+      "Lower-relevance papers use the brief summary format"
+    ]
+  },
+  {
+    "id": "tc3",
+    "prompt": "Find papers on ESG disclosure and greenwashing detection using NLP.",
+    "assertions": [
+      "Conducts multiple searches to cover both ESG/greenwashing and NLP angles",
+      "Returns results from AOS, JAE, or other relevant target journals if available",
+      "Handles interdisciplinary scope (accounting + NLP) without getting confused",
+      "Offers to search more broadly if fewer than 3 papers found",
+      "Quotes are clearly from accessible content (abstract or open-access)"
+    ]
+  },
+  {
+    "id": "tc4",
+    "prompt": "Look up research on going concern opinions and bankruptcy prediction.",
+    "assertions": [
+      "Returns papers from AJPT, TAR, or JAR as primary sources",
+      "Citation counts are included where available",
+      "Papers are in ranked order",
+      "Offers follow-up options at the end"
+    ]
+  },
+  {
+    "id": "tc5",
+    "prompt": "What papers exist on earnings management around IPOs?",
+    "assertions": [
+      "Returns highly cited, well-known papers (e.g., Teoh et al.) if accessible",
+      "Ranking correctly prioritizes relevance over recency for this classic topic",
+      "APA-style in-text citation is used for any quoted text",
+      "Includes DOI or journal link for each paper"
+    ]
+  }
+]
