@@ -176,6 +176,58 @@ Beyond universal dimensions, accounting archival papers face a distinct set of r
 | **PCAOB inspection data** | Inspection deficiencies must be correctly coded (office-level vs. firm-level); engagement-level deficiencies are not public |
 | **Comment letter data** | If using SEC comment letters from EDGAR, describe the extraction method (keyword search, full-text parsing) and validate the sample |
 
+### 2.7 Design Science Research (DSR)
+
+Design science papers create and evaluate artifacts (systems, methods, models, processes) to solve identified problems. The canonical framework is Hevner et al. (2004), which specifies seven guidelines. Reviewers must evaluate DSR papers against these guidelines explicitly — many papers cite Hevner but do not systematically follow the guidelines.
+
+| Additional Dimension | Review Focus |
+|---------------------|-------------|
+| **Artifact definition** | Is the artifact (system, method, model, process, framework) crisply and unambiguously defined? Can the reader distinguish the artifact from the demonstration? A "methodology" claim requires a generalizable, systematic, replicable process — not just worked examples |
+| **Problem relevance (Guideline 1)** | Is the practical problem significant and well-motivated? Does the paper identify a specific gap in current practice (not just in academic literature)? For AIS papers: survey current industry tools and practices, then identify what is missing |
+| **Design evaluation rigor (Guideline 3)** | Is the artifact evaluated beyond "it runs"? Demonstration alone is insufficient. Acceptable evaluation methods: controlled experiment, simulation with baseline comparison, field study, expert panel, scenario analysis. The evaluation must show the artifact produces *better outcomes* than alternatives or the status quo |
+| **Research contribution (Guideline 4)** | What is the knowledge contribution — the artifact itself, the design process, or the evaluation methodology? Authors must state this explicitly. "We propose a process" is insufficient without explaining what generalizable knowledge the process contributes |
+| **Research rigor (Guideline 5)** | Are construction and evaluation methods rigorous? For construction: are design decisions justified with theory or evidence? For evaluation: are metrics appropriate and results interpreted correctly? |
+| **Design as search process (Guideline 6)** | Are design alternatives explored? Did the authors consider and compare alternative designs, or did they jump to a single solution without justification? |
+| **Communication (Guideline 7)** | Is the artifact described with sufficient detail for practitioners to implement it and researchers to build on it? Are configuration parameters, assumptions, and boundary conditions documented? |
+| **Kernel theory** | Does the design draw on established theories (kernel theories) to justify design choices, or are choices ad hoc? |
+| **Iteration** | DSR typically involves build-evaluate cycles. Does the paper show evidence of iterative refinement, or is the first design the final design? |
+
+#### DSR-Specific Red Flags (Automatic Major Revision)
+- Citing Hevner et al. (2004) without mapping the contribution to the seven guidelines
+- Claiming a "methodology" or "framework" but presenting only a proof-of-concept with 1–2 worked examples
+- Evaluation limited to "the system produced output" with no comparison to baselines, alternatives, or expert judgment
+- No discussion of artifact generalizability, boundary conditions, or limitations
+- Design decisions made without theoretical or empirical justification
+- Confusing the artifact with the technology used to build it (e.g., "the artifact is ChatGPT" vs. "the artifact is a process that leverages LLMs")
+- Year inconsistency in Hevner et al. citation (2004, not 2014) — a surprisingly common error
+
+### 2.8 AIS / Emerging Technology Papers (Blockchain, AI, IoT, Smart Contracts)
+
+Papers at AIS-focused venues (JETA, IJAIS, JIS) and emerging technology tracks at TAR/JAR often involve technology artifacts, simulations, or prototypes applied to accounting/auditing contexts. These papers must demonstrate both technical accuracy and accounting domain relevance. Reviewers must be prepared to evaluate claims that span computer science/engineering and accounting/auditing.
+
+| Additional Dimension | Review Focus |
+|---------------------|-------------|
+| **Technical claim accuracy** | Do technical descriptions match established CS/engineering knowledge? Watch for: overstating vulnerabilities of a technology (e.g., claiming blockchain is "prone to" data integrity issues when immutability is its core design feature), conflating different technology variants, or using imprecise terminology. When in doubt, verify claims against authoritative sources (e.g., Ethereum Yellow Paper, Bitcoin whitepaper, NIST frameworks) |
+| **Technology-domain fit** | Is there a clear and justified connection between the technology and the accounting/auditing problem? Does the paper explain *why* this technology is appropriate for this problem, rather than assuming the connection is self-evident? |
+| **Generalizability analysis** | Does the paper discuss applicability beyond the specific implementation? For blockchain: public vs. private vs. hybrid chains — where does the approach apply, where does it differ, and why? For AI: does it generalize across models, tasks, or domains? Authors who claim generalizability must provide analysis, not hand-waving ("this could also apply to private blockchains") |
+| **Industry practice survey** | Does the paper survey current industry practice and identify the specific gap? For blockchain assurance: what do firms like Deloitte, EY, CertiK, Halborn, Trail of Bits already do? For AI in auditing: what tools do the Big 4 and specialized firms already deploy? A paper cannot claim novelty without establishing what already exists in practice |
+| **Simulation/prototype validation** | For papers using simulations or prototypes: (1) Is the scale justified relative to real-world systems? (e.g., 3 miners vs. thousands in production Bitcoin). (2) Are results free of anomalies? (e.g., negative counts, percentages > 100% or < 0%). (3) Are parameter choices documented and justified? (4) Is there a baseline comparison (with vs. without the intervention)? (5) Are results reproducible — are code, configurations, and data shared or described in sufficient detail? |
+| **AI-as-methodology evaluation** | When AI/LLM tools are part of the research methodology (not just the subject): (1) **Accuracy validation** — are AI outputs compared to expert/ground-truth analysis? Report precision, recall, or agreement metrics. (2) **Prompt documentation** — are prompts fully documented, not just summarized? (3) **Prompt bias** — do prompts lead the model toward expected answers? (e.g., "list the risks related to X" primes the model to find risks whether or not they exist). (4) **Consistency** — are results stable across multiple runs? LLMs are stochastic; single-run results are not reliable. (5) **Hallucination mitigation** — what safeguards prevent the AI from generating plausible but incorrect outputs? (6) **Model versioning** — exact model name, version, date of access, and parameters (temperature, etc.) must be reported for reproducibility |
+| **Assurance vs. engineering distinction** | Does the paper clearly distinguish between assurance activities (detecting, reporting, opining on controls) and engineering activities (fixing, optimizing, building)? Assurance can *identify* scalability risks but cannot *solve* them. Papers that conflate monitoring/assurance with engineering solutions should clarify scope |
+| **Regulatory and standards alignment** | Does the paper reference current relevant standards and regulatory frameworks? For blockchain: AICPA SOC guidance for digital assets, ISACA blockchain framework, PCAOB guidance on emerging technology. For AI: AICPA guidance on AI in audit, EU AI Act considerations. Are these references current (not outdated)? |
+| **Continuous auditing positioning** | Many AIS/emerging tech papers propose continuous monitoring or real-time assurance. These must be positioned within the established continuous auditing literature (Vasarhelyi & Halper 1991; Alles et al. 2006; Dai & Vasarhelyi 2017). Failing to cite this foundational stream is a significant literature gap |
+
+#### AIS/Emerging Tech Red Flags (Automatic Major Revision)
+- Technical claims that contradict the fundamental design properties of the technology (e.g., claiming blockchain has "data integrity issues" when immutability is its core feature)
+- Using AI as a black box in the methodology with no accuracy evaluation, no prompt documentation, and no hallucination mitigation
+- Claiming generalizability to other technology variants (e.g., private chains, other AI models) without any analysis of differences
+- No survey of current industry practice — assuming a gap exists without evidence
+- Simulation results with unexplained anomalies (negative values, impossible percentages, results that violate physical/logical constraints)
+- Simulation scale orders of magnitude smaller than real-world systems with no justification for why results are still informative
+- Conflating assurance (monitoring/reporting) with engineering (fixing/building) without acknowledging the distinction
+- Missing foundational literature streams (continuous auditing, AI in auditing, smart contract verification) when the paper's contribution directly relates to them
+- Using a specific commercial AI tool (e.g., ChatGPT) without discussing whether results are tool-dependent or generalizable to other LLMs
+
 ---
 
 ## 3. Common Review Pitfalls
