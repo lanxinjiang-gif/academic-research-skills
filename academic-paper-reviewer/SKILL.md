@@ -2,11 +2,11 @@
 name: academic-paper-reviewer
 description: "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, and Socratic guided modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review."
 metadata:
-  version: "1.4"
-  last_updated: "2026-03-08"
+  version: "1.5"
+  last_updated: "2026-07-01"
 ---
 
-# Academic Paper Reviewer v1.4 — Multi-Perspective Academic Paper Review Agent Team
+# Academic Paper Reviewer v1.5 — Multi-Perspective Academic Paper Review Agent Team
 
 Simulates a complete international journal peer review process: automatically identifies the paper's field, dynamically configures 5 reviewers (Editor-in-Chief + 3 peer reviewers + Devil's Advocate) who review from four non-overlapping perspectives — methodology, domain expertise, cross-disciplinary viewpoints, and core argument challenges — ultimately producing a structured Editorial Decision and Revision Roadmap.
 
@@ -408,6 +408,7 @@ Step 9: academic-paper (format-convert) -> Final paper
 | `references/editorial_decision_standards.md` | Accept/Minor/Major/Reject criteria and decision matrix | eic, editorial_synthesizer |
 | `references/statistical_reporting_standards.md` | Statistical reporting standards + APA 7.0 format quick reference + red flag list | methodology_reviewer |
 | `references/quality_rubrics.md` | Calibrated 0-100 scoring rubrics for 7 review dimensions with decision mapping | all reviewers |
+| `references/empirical_discussant_craft.md` | Higher-altitude review moves for empirical econ/accounting/finance papers (frame, construct meaning, "replace the novel construct" test, mechanism depth, flip-threat-into-design, selection bounds) | eic, methodology, domain, perspective, devil's advocate |
 
 ---
 
@@ -467,8 +468,8 @@ Follows the paper's language. Academic terms remain in English. User can overrid
 
 | Item | Content |
 |------|---------|
-| Skill Version | 1.4 |
-| Last Updated | 2026-03-08 |
+| Skill Version | 1.5 |
+| Last Updated | 2026-07-01 |
 | Maintainer | Cheng-I Wu |
 | Dependent Skills | academic-paper v1.0+ (upstream/downstream integration) |
 | Role | Multi-perspective academic paper review simulator |
@@ -479,6 +480,7 @@ Follows the paper's language. Academic terms remain in English. User can overrid
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.5 | 2026-07-01 | Added `references/empirical_discussant_craft.md` — higher-altitude review moves for empirical economics/accounting/finance papers (organizing frame; construct *meaning* vs. measurement; "replace the novel construct" contribution test; mechanism depth; flip-threat-into-identification; theory-driven-heterogeneity / motive-isolating-placebo / internal-structure construct validation; selection-on-unobservables bounds). Wired into eic (Step 3a), methodology_reviewer (Step 6a), perspective_reviewer (Assumption Audit 1d), and devils_advocate (Test 8a). All gated to empirical quantitative papers. |
 | 1.4 | 2026-03-08 | Quality rubrics reference (0-100 scoring with 5 descriptors per dimension, weighted aggregation formula, decision mapping); Quick Mode Selection Guide; Dimension Scores upgraded from optional 1-5 to required 0-100 with rubric descriptors |
 | 1.3 | 2025-03-05 | DA vs R3 role boundaries with explicit responsibility tables; CRITICAL finding criteria with concrete examples; Consensus classification (CONSENSUS-4/3/SPLIT/DA-CRITICAL); Confidence Score weighting rules; Asian & Regional Journals reference (TSSCI + Asia-Pacific + OA options) |
 | 1.2 | 2026-03 | Added statistical reporting standards reference; enhanced methodology_reviewer_agent with statistical reporting adequacy sub-step |

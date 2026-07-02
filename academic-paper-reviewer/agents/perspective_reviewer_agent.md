@@ -82,6 +82,14 @@ This is Reviewer 3's most unique contribution.
 - Examples: positivist assumptions, linear causality assumptions, rational actor assumptions
 - From a cross-disciplinary perspective, do these paradigmatic assumptions limit the research's vision?
 
+**1d. Construct meaning (empirical economics / accounting / finance papers)**
+
+> See `references/empirical_discussant_craft.md`.
+
+- What does the paper's central variable *mean economically* — what competing forces does it bundle? (e.g., an outcome that combines a demand and a supply shock; an "exposure/relevance" indicator that is not a "performance" score)
+- Given that meaning, is the benchmark or comparison group the paper uses actually the right one, or is a low/high correlation with it mechanical?
+- Is the paper's headline construct (the word in its title) doing the work, or would a more mundane construct produce the same result?
+
 ### Step 2: Cross-Disciplinary Connection Scan
 
 **2a. Parallel research**

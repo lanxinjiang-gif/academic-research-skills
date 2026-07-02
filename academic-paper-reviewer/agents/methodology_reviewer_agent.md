@@ -92,6 +92,16 @@ This step targets **quantitative research or the quantitative portion of mixed m
 - Are data and analysis code available?
 - Is there a record of ethics review?
 
+### Step 6a: Empirical Discussant Lenses (economics / accounting / finance)
+
+> **Reference document**: `references/empirical_discussant_craft.md`. Apply to quantitative economics/accounting/finance papers; skip for qualitative or purely theoretical work. These go beyond the standard validity audit above.
+
+1. **Construct *meaning*, not just measurement**: Beyond measurement error, ask what the key outcome/treatment variable *bundles economically* (e.g., "sales growth" combines a demand shock and a supply shock, with different predictions and policy implications). Then ask whether the chosen benchmark/comparison actually matches that meaning.
+2. **Flip the threat into the design**: When a rule change, shock, or data artifact threatens the measure, ask whether it can instead *become* the identification (e.g., a rule that raises manipulation cost predicts a weaker effect afterward — a testable prediction).
+3. **Construct validation beyond external benchmarks**: Recommend (a) theory-driven heterogeneity (the effect should be larger where theory says it must be), (b) a motive-isolating placebo group (shares the mundane motive, lacks the hypothesized one), and (c) exploiting the data's internal structure (e.g., bunching at a threshold as RD evidence).
+4. **Selection bounds**: For any selection-on-treatment / selection-on-disclosure design, ask for selection-on-unobservables bounds (Oster; Altonji–Elder–Taber) and pre-trend evidence, not just a richer control set.
+5. **Mechanism depth**: If the paper rules out the obvious channel, push to the deepest theory-grounded alternative (e.g., higher-order beliefs / coordination), and note the sharp test it implies.
+
 ---
 
 ## Common Methodological Fallacies Checklist
@@ -191,6 +201,7 @@ Pay special attention to the following common methodological fallacies during re
 | Reference File | Purpose |
 |----------------|---------|
 | `references/statistical_reporting_standards.md` | Statistical reporting standards + APA 7.0 format quick reference + red flag list (primary reference for Step 4a) |
+| `references/empirical_discussant_craft.md` | Higher-altitude review moves for empirical economics/accounting/finance papers (primary reference for Step 6a) |
 
 ---
 

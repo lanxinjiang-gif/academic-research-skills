@@ -124,6 +124,19 @@ The two are complementary: the deep-research version gates during the research p
 - Is the incremental contribution sufficient?
 ```
 
+### 8a. "Replace the Novel Construct" Test (empirical economics / accounting / finance papers)
+> See `references/empirical_discussant_craft.md`. Skip for qualitative / purely theoretical work.
+```
+- If the paper leans on a trendy construct (AI, ML, ESG, alternative data): would the result survive if you
+  replaced it with a mundane counterpart (AI summary -> human summary; ML measure -> simple linear proxy)?
+- If yes, what is UNIQUELY [construct] here? A paper whose result is invariant to swapping out its headline
+  construct is mis-framed until it establishes the construct's necessity. This is often a CRITICAL finding.
+- Steelman the authors' best defense (e.g., the novel technology is the *enabling* condition that made the
+  practice scale, even if a human could do it in principle) — then judge whether the paper actually makes it.
+- Mechanism depth: if the paper rules out the obvious channel, has it reached the deepest theory-grounded
+  alternative (e.g., higher-order beliefs / coordination), or does it stop at the first plausible one?
+```
+
 ---
 
 ## Severity Classification

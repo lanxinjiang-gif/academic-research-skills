@@ -489,6 +489,9 @@ https://github.com/Imbad0202/academic-research-skills
 - **academic-paper**: Added Traditional Chinese trigger keywords and Plan Mode trigger section.
 - Both mode selection guides now include bilingual examples and Chinese-specific misselection scenarios.
 
+### v1.5 (2026-07-01) — academic-paper-reviewer
+- **academic-paper-reviewer v1.5**: New `empirical_discussant_craft.md` reference — higher-altitude review moves for empirical economics/accounting/finance papers (organizing frame; construct *meaning* vs. measurement; "replace the novel construct" contribution test; mechanism depth; flip-threat-into-identification; theory-driven-heterogeneity / motive-isolating-placebo / internal-structure construct validation; selection-on-unobservables bounds). Wired into EIC (Step 3a), methodology_reviewer (Step 6a), perspective_reviewer (Assumption Audit 1d), and devils_advocate (Test 8a); all gated to empirical quantitative papers.
+
 ### v2.6 / v2.4 / v1.4 (2026-03-08) — 15+ Improvements
 - **deep-research v2.3**: New systematic-review / PRISMA mode (7th); 3 new agents (risk_of_bias, meta_analysis, monitoring); PRISMA protocol/report templates; Socratic convergence criteria (4 signals + auto-end); Quick Mode Selection Guide
 - **academic-paper v2.4**: 2 new agents (visualization, revision_coach); revision tracking template with 4 status types; citation format conversion (APA↔Chicago↔MLA↔IEEE↔Vancouver); statistical visualization standards; Socratic convergence criteria; revision recovery example; **LaTeX output hardening** — mandatory `apa7` document class, text justification fix (`ragged2e` + `etoolbox`), table column width formula, bilingual abstract centering, standardized font stack (Times New Roman + Source Han Serif TC VF + Courier New), PDF via tectonic only

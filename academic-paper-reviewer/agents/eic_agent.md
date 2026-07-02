@@ -38,6 +38,14 @@ After receiving the Reviewer Configuration Card from field_analyst_agent, adjust
 - Timeliness: Is this issue important now? Will it become more important in the future?
 - Level of interest for international readers
 
+### Step 3a: Framing & Contribution Stress-Test (empirical economics / accounting / finance papers)
+
+> **Reference document**: `references/empirical_discussant_craft.md`. Apply this step to quantitative economics/accounting/finance papers; skip for qualitative or purely theoretical work.
+
+- **Organizing frame**: Can you state the single economic frame that reorganizes the whole paper (not a list of findings)? If the paper lacks one, that is a first-order contribution weakness — suggest one.
+- **"Replace the novel construct" test**: For papers built on a trendy construct (AI, ML, ESG, alternative data), ask: if you swapped the novel construct for a mundane one (e.g., AI summary → human summary), would the result survive? If yes, the paper must establish what is *uniquely* [construct] here. State the author's best available defense.
+- **First-order before incremental**: Is the baseline result (does the phenomenon matter at all?) established before the incremental claim? Recommend ordering accordingly.
+
 ### Step 4: Structural Coherence
 - Is there consistency from Title -> Abstract -> Introduction -> Conclusion?
 - Is the research question clear?
