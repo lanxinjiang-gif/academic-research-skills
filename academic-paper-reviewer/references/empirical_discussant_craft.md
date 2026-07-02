@@ -42,6 +42,7 @@ For any paper built on a trendy or novel construct (AI, ML, ESG, blockchain, alt
 When you conclude "the effect is NOT [information / channel X]," push to the richest theory-grounded alternative rather than the first plausible one.
 - *Example:* if bank tweets convey no new fundamental information, the channel is not "salience/confidence" but **higher-order beliefs / coordination** (Diamond–Dybvig, Morris–Shin global games): depositors act on what they believe *others* will do. That deeper mechanism is also the sharpest test (belief/topic **dispersion should narrow** after the disclosure if coordination is the channel).
 - Ground the paper in its subfield's canonical theory to both frame the contribution and derive tests.
+- **"Strategic behavior" papers — force the full mechanism chain.** For any "the agent does X strategically" claim (managers hide covenant strictness, firms solicit reviews, banks time disclosure), don't stop at "they do X." Require every link: **motive** (benefit vs. cost of X) → **target** (who is actually fooled?) → **efficacy** (does X *work*?) → **consequence** (does it *matter*?). A paper that documents only the first link has shown a correlation, not a mechanism.
 
 ### 5. Bring the SPECIFIC institutional fact or canonical theory — never the generic worry
 "Temporal drift" is generic; "the platform's October-2016 rule change that banned incentivized reviews and reweighted its algorithm" is specific and actionable. "Control for backlash" is generic; "competitor rating agencies kept their numerical scores over the same window" reframes the event. Reach for the exact policy, event, peer behavior, or theorem.
@@ -49,6 +50,7 @@ When you conclude "the effect is NOT [information / channel X]," push to the ric
 ### 6. Flip a validity threat into the identification strategy
 Don't just patch a threat or drop contaminated data — turn the contaminating event into the design.
 - *Example:* a rule change that breaks your measure is itself a **cost shock**: predict a *weaker* effect after it, and test that. The best comment converts a diagnosis into a research design.
+- **Flip a "noisy measure" worry into support for the premise.** If a variable is genuinely hard for *the economic agents themselves* to compute (e.g., covenant strictness: find the covenant → non-GAAP definition → recalculate → forecast the metric), that difficulty is precisely *why the disclosure / summary / intermediary is valuable* — not merely a measurement caveat. Flip the threat toward the paper's motivation, not just its identification.
 
 ### 7. Validate constructs with theory-driven heterogeneity, motive-isolating placebos, and the data's internal structure — not only external benchmarks
 - **Theory-driven heterogeneity:** the effect should be stronger where theory says it must be (e.g., "experience goods," where buyers rely on reviews, vs. "search goods," where they don't). Finding it there validates the construct.
@@ -66,7 +68,7 @@ Pair each "this threatens X" with "here is how to strengthen or reframe it." And
 - [ ] Stated the **one economic frame** that reorganizes the paper.
 - [ ] Named what the **key outcome/treatment variable bundles** economically, and whether the benchmark fits.
 - [ ] Ran the **"replace the novel construct with a mundane one"** test and stated the author's best defense.
-- [ ] Pushed the mechanism to its **deepest theory-grounded** form (not the first plausible alternative).
+- [ ] Pushed the mechanism to its **deepest theory-grounded** form (not the first plausible alternative); for a "strategic behavior" claim, checked the full **motive → target → efficacy → consequence** chain.
 - [ ] Anchored the two most important critiques in a **specific institutional fact or canonical theorem**.
 - [ ] Tried to **flip at least one threat into an identification** opportunity.
 - [ ] Proposed at least one **theory-driven heterogeneity / motive-isolating placebo / internal-structure** validation, and named a **selection-bound** (Oster/AET) where selection is a concern.
