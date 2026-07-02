@@ -2,8 +2,8 @@
 name: academic-paper
 description: "Academic paper writing skill with 12-agent pipeline. v2.4: LaTeX output formatting hardening — mandatory apa7 class, text justification fix, table column width formula, bilingual abstract centering, standardized font stack, PDF must compile from LaTeX. Supports IMRaD, literature review, theoretical, case study, policy brief, and conference paper structures. APA 7.0 (default), Chicago, MLA, IEEE, Vancouver citation formats. Bilingual abstracts (zh-TW + EN). Multi-format output (LaTeX, DOCX, PDF, Markdown). Triggers on: write paper, academic paper, paper outline, write abstract, revise paper, check citations, convert to LaTeX, guide my paper, parse reviews, revision roadmap, 寫論文, 學術論文, 論文大綱, 寫摘要, 修改論文, 檢查引用, 引導我寫論文, 帶我規劃論文, 逐章規劃, 論文架構, 審查意見, 修訂路線圖."
 metadata:
-  version: "2.4"
-  last_updated: "2026-03-08"
+  version: "2.5"
+  last_updated: "2026-07-01"
 ---
 
 # Academic Paper — Academic Paper Writing Agent Team
@@ -418,6 +418,7 @@ See `agents/intake_agent.md` for the complete field definitions of the Phase 0 c
 | `references/credit_authorship_guide.md` | CRediT 14 roles + ICMJE + AI policy + contribution matrix | intake, formatter, draft_writer |
 | `references/funding_statement_guide.md` | Taiwan/international funding formats + statement templates | intake, formatter, draft_writer |
 | `references/statistical_visualization_standards.md` | APA 7.0 figure guidelines, accessible color palettes, chart type decision tree, matplotlib/ggplot2 code templates | visualization |
+| `references/empirical_discussant_craft.md` | Higher-altitude contribution/framing moves for empirical econ/accounting/finance papers, applied proactively (organizing frame, "replace the novel construct" test, construct meaning, mechanism depth, incremental-factor reframing) | argument_builder, peer_reviewer |
 
 Also references from `deep-research`:
 - `deep-research/references/apa7_style_guide.md` — base APA 7 reference (this skill extends, not duplicates)
@@ -509,6 +510,7 @@ academic-paper + academic-paper-reviewer -> Peer review -> revision loop
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.5 | 2026-07-01 | NEW `references/empirical_discussant_craft.md` — higher-altitude moves for empirical economics/accounting/finance papers, applied *proactively* so the paper survives top-discussant critiques. `argument_builder_agent` gains Step 6 (Empirical Contribution Stress-Test: organizing frame; "replace the novel construct" test with best defense; what the key variable *means*; mechanism depth; pre-empt canonical objections; incremental-factor reframing). `peer_reviewer_agent` gains empirical-discussant cues in the Originality and Methodological Rigor scoring rubrics. All gated to empirical quantitative papers. |
 | 2.4 | 2026-03-08 | LaTeX output formatting hardening: mandatory `apa7` document class for APA 7.0 output; text justification fix (`ragged2e` + `etoolbox` to override apa7 man mode `\raggedright`); table column width formula (`(\linewidth - N\tabcolsep) * \real{proportion}` — prevents overflow); bilingual abstract centering (`\begin{center}\textbf{...}\end{center}`); font stack standardized (Times New Roman + Source Han Serif TC VF + Courier New); `xurl` for URL line breaking; `fancyvrb` Verbatim with `fontsize` for wide content; PDF must compile from LaTeX via tectonic (no HTML-to-PDF) |
 | 2.3 | 2026-03-08 | NEW visualization_agent (11th: publication-quality figures with matplotlib/ggplot2, APA 7.0, colorblind-safe); NEW revision_coach_agent (12th: standalone reviewer comment parser → Revision Roadmap); Socratic convergence criteria (4 signals: thesis clarity, chapter coherence, evidence mapping, limitation honesty) + question taxonomy (clarifying, probing, structuring, challenging); revision tracking template (4 status types); citation format conversion in formatter_agent (APA 7 ↔ Chicago ↔ MLA ↔ IEEE ↔ Vancouver); Quick Mode Selection Guide; 9th mode: revision-coach |
 | 2.2 | 2025-03-05 | 4-level argument strength scoring with quantified thresholds; plagiarism & retraction screening protocol; F11 Desk-Reject Recovery + F12 Conference-to-Journal Conversion failure paths; Plan -> Full mode conversion protocol; cross-skill reference to `shared/handoff_schemas.md` |

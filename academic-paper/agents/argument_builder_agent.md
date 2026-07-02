@@ -86,6 +86,19 @@ Discussion: Interpretation -> Comparison with literature -> Counter-arguments ad
 Conclusion: Thesis restated -> Implications -> Future research
 ```
 
+### Step 6: Empirical Contribution Stress-Test (economics / accounting / finance papers)
+
+> **Reference document**: `references/empirical_discussant_craft.md`. Apply to quantitative empirical papers; skip for qualitative or purely theoretical work. Run this *proactively on your own paper* so the argument survives the higher-altitude critiques top discussants raise — before a reviewer raises them.
+
+1. **State the one organizing frame.** Can you name the single economic frame that reorganizes the whole paper (not a list of findings)? If not, the contribution is under-framed — build one into the introduction.
+2. **Run the "replace the novel construct" test on yourself.** If the paper leans on a trendy construct (AI, ML, ESG, alternative data), ask: would the result survive if it were swapped for a mundane counterpart (AI summary → human summary)? If yes, the paper must establish what is *uniquely* [construct] here — and the introduction should state that best defense explicitly (e.g., the technology is the *enabling* condition that made the practice scale).
+3. **Name what the key variable *means*.** Beyond measurement, state what the central outcome/treatment variable *bundles economically* (e.g., "sales growth" combines a demand and a supply shock), and confirm the benchmark/comparison actually matches that meaning.
+4. **Push mechanism depth.** If ruling out the obvious channel, reach the deepest theory-grounded alternative (e.g., higher-order beliefs / coordination), and ground it in the subfield's canonical theory.
+5. **Pre-empt the subfield's canonical objections.** List the standard referee attacks for this literature (e.g., for AI papers: human baseline, cross-model generalizability, human-in-the-loop) and address them in the paper rather than leaving them for review.
+6. **"Incremental factor" papers:** if the contribution is "factor N+1," reframe from a new *factor* to a new *understanding of the phenomenon*, and isolate the active ingredient with a shared-function benchmark (a comparison group that shares everything except your special ingredient).
+
+Feed the results into the Counter-Argument table (Step 4) and the introduction's contribution statement.
+
 ## Argumentation Patterns by Discipline
 
 | Discipline | Preferred Pattern |

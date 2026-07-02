@@ -81,6 +81,9 @@ Once you understand what is needed, design the analytical and framing strategy b
 - Check: does the introduction make the right promise, and does the empirics deliver on it?
 - Consider whether a reframing makes the contribution *stronger* (often it does)
 - Distinguish between "improvement" framing and "limitation" framing — top journals often accept papers that rigorously document limits rather than claiming spurious improvements
+- **Lead with ONE organizing economic frame**, not a list of results (e.g., "communication as a *third* solution to bank runs"). If the reviewer can't find the frame, that *is* the contribution problem.
+- **Pre-empt the "replace the novel construct" test.** If the paper leans on a trendy construct (AI, ML, ESG, alternative data), a reviewer will ask: "would this survive with a mundane counterpart (AI summary → human summary)?" Answer it in the paper — state what is *uniquely* that construct, or the *enabling-condition* defense (it could be done manually in principle, but the technology is why the practice exists/scales).
+- **Interrogate what your key variable *means*** (not just how it's measured): what does it bundle economically, and is the benchmark you compare against actually the right one? See `references/empirical_discussant_craft.md`.
 
 ### For "incremental vs. benchmark" concerns
 
@@ -91,6 +94,10 @@ The standard two-pronged response:
 2. **Quantify the improvement under a conservative comparison**: Define an "apples-to-apples" benchmark — holding constant everything that isn't your claimed contribution — and show the improvement is substantial. Be explicit about what changes when methodology is held constant.
 
 See `references/analysis-playbook.md` Section 18 for the apples-to-apples benchmark comparison technique.
+
+**When the paper is "factor N+1"** (adding one more item to a long list — e.g., "another auditor-expertise factor"), a strong reviewer will ask "why care about one more factor?" Two moves that convert this from a weakness into the contribution (see `references/empirical_discussant_craft.md`):
+- **Reframe from a new *factor* to a new *understanding of the phenomenon*.** Don't argue "X also matters"; argue "X reveals the phenomenon works differently than we thought" (e.g., not "valuation expertise matters" but "audit is a continuous value-*co-creating* relationship, which is why auditors beat one-shot M&A intermediaries").
+- **Isolate the active ingredient with a shared-function benchmark** — a comparison group that shares everything except your special ingredient (auditors vs. financial intermediaries who share the advisory function but lack the ongoing relationship). This is the "replace the novel construct" test run in reverse and is highly persuasive to referees.
 
 ### For econometric/methodology concerns
 
@@ -229,3 +236,4 @@ Example:
 - `references/response-language.md` — Exact phrases, opening sentences, structural templates; read before drafting any response
 - `references/analysis-playbook.md` — Full menu of analyses for each type of concern; read when designing the empirical response
 - `references/journal-norms.md` — What editors at JAR, TAR, JAE, JOAR, CAR expect; read when calibrating framing and contribution claims
+- `references/empirical_discussant_craft.md` — Higher-altitude critiques top discussants/referees raise (organizing frame, "replace the novel construct" test, construct meaning, mechanism depth, incremental-factor reframing) and how to pre-empt them; read when responding to framing/contribution, incremental-vs-benchmark, or theory/mechanism comments

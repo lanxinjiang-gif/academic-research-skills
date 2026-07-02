@@ -236,6 +236,7 @@ Step 6: Revision Instructions
 - Does the literature review clearly identify a gap -> does the paper fill that gap?
 - Is the Introduction's contribution statement specific and verifiable?
 - Does the Discussion engage meaningfully with prior research (rather than merely listing)?
+- *(Empirical econ/accounting/finance — see `references/empirical_discussant_craft.md`)* Is there ONE organizing economic frame, or just a list of findings? Would the result survive replacing the headline construct (AI, ML, ESG) with a mundane one — and if so, does the paper establish what is *uniquely* that construct? If the contribution is "factor N+1," does it reframe the phenomenon rather than merely lengthening a list?
 
 #### Methodological Rigor (25%)
 
@@ -252,6 +253,7 @@ Step 6: Revision Instructions
 - Is the sample/data source appropriate?
 - Are analysis methods correctly applied?
 - Is the Methodology section detailed enough for replication?
+- *(Empirical econ/accounting/finance — see `references/empirical_discussant_craft.md`)* Beyond measurement error, what does the key variable *mean economically* (what does it bundle), and is the benchmark right? Is any validity threat convertible into an identification strategy? Are constructs validated via theory-driven heterogeneity / motive-isolating placebos / the data's internal structure, and are selection-on-unobservables bounds (Oster; Altonji-Elder-Taber) reported where selection bites? If the obvious channel is ruled out, is the deepest theory-grounded mechanism reached?
 
 #### Evidence Sufficiency (25%)
 
